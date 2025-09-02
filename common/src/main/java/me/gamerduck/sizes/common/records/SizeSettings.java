@@ -2,21 +2,7 @@ package me.gamerduck.sizes.common.records;
 
 import me.gamerduck.sizes.common.config.SizeDefinition;
 
-public class SizeSettings {
-
-    double size;
-    double chanceOnJoin;
-    double reachMultiplier;
-    double strengthMultiplier;
-    double speedMultiplier;
-
-    public SizeSettings(double size, double chanceOnJoin, double reachMultiplier, double strengthMultiplier, double speedMultiplier ) {
-        this.size = size;
-        this.chanceOnJoin = chanceOnJoin;
-        this.reachMultiplier = reachMultiplier;
-        this.strengthMultiplier = strengthMultiplier;
-        this.speedMultiplier = speedMultiplier;
-    }
+public record SizeSettings(double size, double chanceOnJoin, double reachMultiplier, double strengthMultiplier, double speedMultiplier) {
 
     public static SizeSettings fromDefinition(SizeDefinition definition) {
         Builder builder = new Builder();
@@ -26,26 +12,6 @@ public class SizeSettings {
         builder.setStrengthMultiplier(definition.getStrength());
         builder.setSpeedMultiplier(definition.getSpeed());
         return builder.build();
-    }
-
-    public double getSize() {
-        return size;
-    }
-
-    public double getChanceOnJoin() {
-        return chanceOnJoin;
-    }
-
-    public double getReachMultiplier() {
-        return reachMultiplier;
-    }
-
-    public double getStrengthMultiplier() {
-        return strengthMultiplier;
-    }
-
-    public double getSpeedMultiplier() {
-        return speedMultiplier;
     }
 
     private static class Builder {

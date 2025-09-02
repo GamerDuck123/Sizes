@@ -32,7 +32,7 @@ public class SizePool {
     }
 
     public void addSize(SizeSettings settings) {
-        sizePool.put(settings.getSize(), settings);
+        sizePool.put(settings.size(), settings);
     }
 
     public void reloadSizes() {

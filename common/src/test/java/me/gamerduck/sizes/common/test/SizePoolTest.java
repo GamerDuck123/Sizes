@@ -29,10 +29,10 @@ class SizePoolTest {
 
         SizeSettings settings = sizePool.get(1.0);
         assertNotNull(settings, "SizeSettings for 1.0 should not be null");
-        assertEquals(1.0, settings.getSize());
-        assertEquals(0.5, settings.getChanceOnJoin());
-        assertEquals(0.1, settings.getReachMultiplier());
-        assertEquals(0.5, settings.getStrengthMultiplier());
-        assertEquals(2.0, settings.getSpeedMultiplier());
+        assertEquals(1.0, settings.size());
+        assertEquals(0.5, settings.chanceOnJoin());
+        assertEquals(0.1, settings.reachMultiplier());
+        assertEquals(0.5, settings.strengthMultiplier());
+        assertEquals(2.0, settings.speedMultiplier());
     }
 }

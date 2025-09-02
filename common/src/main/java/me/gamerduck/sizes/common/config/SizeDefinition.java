@@ -3,10 +3,6 @@ package me.gamerduck.sizes.common.config;
 import ninja.leaping.configurate.objectmapping.Setting;
 import ninja.leaping.configurate.objectmapping.serialize.ConfigSerializable;
 
-//chance = 1.0
-//reach = 1.0
-//strength = 0.5
-//speed = 2.0
 @ConfigSerializable
 public class SizeDefinition {
 

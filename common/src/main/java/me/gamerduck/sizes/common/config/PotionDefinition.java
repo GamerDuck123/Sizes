@@ -3,8 +3,6 @@ package me.gamerduck.sizes.common.config;
 import ninja.leaping.configurate.objectmapping.Setting;
 import ninja.leaping.configurate.objectmapping.serialize.ConfigSerializable;
 
-//level = 1
-//change = 1
 @ConfigSerializable
 public class PotionDefinition {
 

@@ -3,20 +3,6 @@ package me.gamerduck.sizes.common.config;
 import ninja.leaping.configurate.objectmapping.Setting;
 import ninja.leaping.configurate.objectmapping.serialize.ConfigSerializable;
 
-// === Player Data Storage ===
-//player-data {
-//    storage-type = "mysql"
-//
-//    // === This section only works if storage-type is mysql or mariadb ===
-//    mysql {
-//        host = "localhost"
-//        port = 3306
-//        database = "minecraft"
-//        username = "user"
-//        password = "password"
-//        use-ssl = false
-//    }
-//}
 @ConfigSerializable
 public class ConfigDefinition {
 
